@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-js-37c08a306bcc28ddd836.js","mappings":"sKACe,SAASA,IACtB,OAAO,2BAAK,cACd,C","sources":["webpack://portfolio/./src/pages/about.js"],"sourcesContent":["import React from \"react\";\nexport default function About() {\n  return <div>In Progress</div>;\n}\n"],"names":["About"],"sourceRoot":""}

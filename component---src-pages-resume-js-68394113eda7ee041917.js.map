@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-resume-js-68394113eda7ee041917.js","mappings":"sKACe,SAASA,IACtB,OAAO,2BAAK,cACd,C","sources":["webpack://portfolio/./src/pages/resume.js"],"sourcesContent":["import React from \"react\";\nexport default function Resume() {\n  return <div>In Progress</div>;\n}\n"],"names":["Resume"],"sourceRoot":""}

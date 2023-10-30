@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-experiences-js-3729508bbe46b8eb22f1.js","mappings":"sKACe,SAASA,IACtB,OAAO,2BAAK,cACd,C","sources":["webpack://portfolio/./src/pages/experiences.js"],"sourcesContent":["import React from \"react\";\nexport default function Experiences() {\n  return <div>In Progress</div>;\n}\n"],"names":["Experiences"],"sourceRoot":""}

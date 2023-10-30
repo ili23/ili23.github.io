@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-contact-js-8e05cd13784bd3d32495.js","mappings":"sKACe,SAASA,IACtB,OAAO,2BAAK,cACd,C","sources":["webpack://portfolio/./src/pages/contact.js"],"sourcesContent":["import React from \"react\";\nexport default function Contact() {\n  return <div>In Progress</div>;\n}\n"],"names":["Contact"],"sourceRoot":""}
