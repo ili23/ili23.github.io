@@ -4,7 +4,10 @@ import frisbee from "../images/frisbee.png";
 import Footer from "../components/footer";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "gatsby";
-
+import CULogo from "../images/cuseal.png";
+import UPLogo from "../images/uplogo.png";
+import CDSLogo from "../images/cds_logo.png";
+import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
   useEffect(() => {
@@ -46,11 +49,11 @@ const Home = () => {
                   Contact
                 </ScrollLink>
               </li>
-              <li className="hover:border-b-2 border-b-2 border-transparent hover:border-[#FEF4E7] cursor-pointer">
+              {/* <li className="hover:border-b-2 border-b-2 border-transparent hover:border-[#FEF4E7] cursor-pointer">
                 <ScrollLink to="resume" smooth={true} duration={800}>
                   Resume
                 </ScrollLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         )}
@@ -146,18 +149,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-screen" id="experiences">
+      <div className="h-[70vh]" id="experiences">
         <h1 className="text-4xl py-8">Experiences</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project1.jpg"
-              alt="Project 1"
-              className="w-full h-40 object-cover"
-            />
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
+            <img src={UPLogo} alt="Project 1" className="h-40 object-cover" />
             <div className="p-4">
-              <Link to="/project">
+              <Link to="/experiences">
                 <h2 className="text-xl font-bold mb-2">
                   Union Pacific Railroad
                 </h2>
@@ -167,14 +166,10 @@ const Home = () => {
           </div>
 
           {/* Project 2 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project2.jpg"
-              alt="Project 2"
-              className="w-full h-40 object-cover"
-            />
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
+            <img src={CULogo} alt="Project 2" className=" h-40 object-cover" />
             <div className="p-4 ">
-              <Link to="/project">
+              <Link to="/experiences">
                 <h2 className="text-xl font-bold mb-2">Cornell University</h2>
               </Link>
               <p className="">Teaching Assistant </p>
@@ -182,27 +177,51 @@ const Home = () => {
           </div>
 
           {/* Project 3 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project3.jpg"
-              alt="Project 3"
-              className="w-full h-40 object-cover"
-            />
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
+            <img src={CDSLogo} alt="Project 3" className="h-40 object-cover" />
             <div className="p-4">
-              <Link to="/project">
+              <Link to="/experiences">
                 <h2 className="text-xl font-bold mb-2">Cornell Data Science</h2>
               </Link>
               <p className="">Quantitative Finance Subteam Lead</p>
             </div>
           </div>
         </div>
+        <div className="flex justify-center mt-8">
+          <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
+            Show More
+          </button>
+        </div>
       </div>
-      <div className="h-screen" id="contact">
-        <h1>Contact</h1>
+      <div className="h-[30vh]" id="contact">
+        <div className="max-w-full mt-16">
+          <h1 className="text-4xl mb-8">Get In Touch!</h1>
+          <div className="flex flex-col items-center">
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/your-linkedin-username/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#2867B2] text-white px-6 py-3 rounded-md mb-4 hover:bg-[#1D4C8F] focus:outline-none focus:ring focus:border-blue-300 flex items-center"
+            >
+              <FaLinkedin className="text-xl mr-2" /> LinkedIn
+            </a>
+
+            {/* GitHub */}
+            <a
+              href="https://github.com/your-github-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#333] text-white px-6 py-3 rounded-md hover:bg-[#000] focus:outline-none focus:ring focus:border-blue-300 flex items-center"
+            >
+              <FaGithub className="text-xl mr-2" /> GitHub
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="h-screen" id="resume">
+      {/* <div className="h-screen" id="resume">
         Resume
-      </div>
+      </div> */}
       <Footer />
     </div>
   );
