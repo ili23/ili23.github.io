@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import pfp from "../images/pfp.jpg";
 import Footer from "../components/footer";
 import { Link as ScrollLink } from "react-scroll";
-import ReactTyped from "react-typed";
 
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
@@ -18,25 +17,8 @@ const Home = () => {
     <div className="max-w-full mx-28">
       <div className="grid grid-cols-6  h-screen ">
         <div className="flex col-start-1 col-end-5 flex-col justify-center">
-          <h1 className="text-7xl pb-8">
-            <ReactTyped
-              strings={["Hi, I'm Iram."]}
-              showCursor={false}
-              typeSpeed={100}
-              backSpeed={30}
-            />
-          </h1>
-          <h2 className="text-4xl pb-16">
-            <ReactTyped
-              strings={["Welcome to my portfolio site!"]}
-              startDelay={2000}
-              typeSpeed={100}
-              showCursor={true}
-              cursorChar=""
-              loop
-              backSpeed={30}
-            />
-          </h2>
+          <h1 className="text-7xl pb-8">Hi, I'm Iram.</h1>
+          <h2 className="text-4xl pb-16">Welcome to my portfolio site!</h2>
         </div>
         {showSecondTyped && (
           <div className="col-start-5 col-end-7 flex items-center justify-end">
