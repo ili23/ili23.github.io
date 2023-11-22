@@ -199,7 +199,7 @@ const Home = () => {
           <div className="flex flex-col items-center">
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/your-linkedin-username/"
+              href="https://www.linkedin.com/in/iram-liu/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#2867B2] text-white px-6 py-3 rounded-md mb-4 hover:bg-[#1D4C8F] focus:outline-none focus:ring focus:border-blue-300 flex items-center"
@@ -209,7 +209,7 @@ const Home = () => {
 
             {/* GitHub */}
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/ili23"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#333] text-white px-6 py-3 rounded-md hover:bg-[#000] focus:outline-none focus:ring focus:border-blue-300 flex items-center"
