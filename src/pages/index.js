@@ -3,6 +3,7 @@ import pfp from "../images/pfp.jpg";
 import frisbee from "../images/frisbee.png";
 import Footer from "../components/footer";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "gatsby";
 
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
@@ -81,13 +82,123 @@ const Home = () => {
         </div>
       </div>
       <div className="h-screen" id="projects">
-        Projects
+        <h1 className="text-4xl py-8">Projects</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Project 1 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project1.jpg"
+              alt="Project 1"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">TrivAI</h2>
+              </Link>
+              <p className="">
+                iOS app that generates review question from user inputs and
+                textbook images
+              </p>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project2.jpg"
+              alt="Project 2"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4 ">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">
+                  Cloud Based Options Trading Bot
+                </h2>
+              </Link>
+              <p className="">
+                Researched and implemented the long straddle strategy to
+                generate alpha
+              </p>
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project3.jpg"
+              alt="Project 3"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">Go Fish Card Game</h2>
+              </Link>
+              <p className="">
+                Implementation of the popular card game Go Fish in OCaml
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center mt-8">
+          <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
+            Show More
+          </button>
+        </div>
       </div>
+
       <div className="h-screen" id="experiences">
-        Experiences
+        <h1 className="text-4xl py-8">Experiences</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Project 1 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project1.jpg"
+              alt="Project 1"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">
+                  Union Pacific Railroad
+                </h2>
+              </Link>
+              <p className="">Software Engineer Intern</p>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project2.jpg"
+              alt="Project 2"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4 ">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">Cornell University</h2>
+              </Link>
+              <p className="">Teaching Assistant </p>
+            </div>
+          </div>
+
+          {/* Project 3 */}
+          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
+            <img
+              src="project3.jpg"
+              alt="Project 3"
+              className="w-full h-40 object-cover"
+            />
+            <div className="p-4">
+              <Link to="/project">
+                <h2 className="text-xl font-bold mb-2">Cornell Data Science</h2>
+              </Link>
+              <p className="">Quantitative Finance Subteam Lead</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="h-screen" id="contact">
-        Contact
+        <h1>Contact</h1>
       </div>
       <div className="h-screen" id="resume">
         Resume
