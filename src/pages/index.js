@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import pfp from "../images/pfp.jpg";
+import frisbee from "../images/frisbee.png";
 import Footer from "../components/footer";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -53,17 +54,31 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="h-screen">
-        <img className="h-1/2" src={pfp} alt="pfp"></img>{" "}
-      </div>
-      <div className="h-screen" id="about">
-        <h1 className="text-4xl"> A Little About Myself:</h1>
-        <p>
-          {" "}
-          I'm currently a junior at Cornell University working towards a
-          Bachelor of Science in Computer Science. Next summer, I'm interning at
-          Talroo as a Machine Learning Engineer Intern.'{" "}
-        </p>
+      <div className="h-screen grid grid-cols-6 max-w-full flex flex-row py-14">
+        <div
+          className="col-start-1 col-end-6 bg-[#FFFBF5] text-[#679186] px-8"
+          id="about"
+        >
+          <h1 className="text-4xl pt-40 pb-10"> A Little About Myself:</h1>
+          <div className="space-y-4 text-lg">
+            <li>
+              Undergrad at Cornell University Studying Computer Science and
+              Applied Mathematics
+            </li>
+            <li>
+              Incoming Machine Learning Engineer Intern at Talroo (Summer 2024)
+            </li>
+            <li>Interests: Software Development, Machine Learning, Finance</li>
+            <li>
+              Ask me About: Ultimate Frisbee, Running, Chess, Collecting
+              Sneakers
+            </li>
+          </div>
+        </div>
+        <div className="col-start-6 col-start-8 flex justify-center flex-col items-center">
+          <img className="h-[50vh]" src={pfp} alt="pfp"></img>
+          {/* <img className="h-44 w-32" src={frisbee} alt="frisbee"></img> */}
+        </div>
       </div>
       <div className="h-screen" id="projects">
         Projects
