@@ -8,6 +8,7 @@ import CULogo from "../images/cuseal.png";
 import UPLogo from "../images/uplogo.png";
 import CDSLogo from "../images/cds_logo.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
+import Typewriter from "typewriter-effect";
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
   useEffect(() => {
@@ -23,7 +24,15 @@ const Home = () => {
       <div className="grid grid-cols-6  h-screen ">
         <div className="flex col-start-1 col-end-5 flex-col justify-center">
           <h1 className="text-7xl pb-8">Hi, I'm Iram.</h1>
-          <h2 className="text-4xl pb-16">Welcome to my portfolio site!</h2>
+          <h2 className="text-4xl pb-16">
+            <Typewriter
+              options={{
+                strings: ["Welcome to my portfolio site!"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h2>
         </div>
         {showSecondTyped && (
           <div className="col-start-5 col-end-7 flex items-center justify-end">
