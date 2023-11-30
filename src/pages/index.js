@@ -13,7 +13,8 @@ import ProjectCard from "../components/projectCard";
 import TrivAI from "../images/trivai.png";
 import BackgroundMap from "../images/map.png";
 import ExperienceCard from "../components/experienceCard";
-
+import WohohiameLogo from "../images/wohohiameLogo.png";
+import TalrooLogo from "../images/talroo.png";
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
   useEffect(() => {
@@ -127,8 +128,16 @@ const Home = () => {
       </div>
 
       <div className="h-screen mt-10" id="experiences">
-        <h1 className="text-4xl py-8 font-bold">Past Experiences</h1>
+        <h1 className="text-4xl py-8 font-bold">Experiences</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
+          {/* Project 2 */}
+          <ExperienceCard
+            name="Talroo"
+            moreDetails="/experiences"
+            imageSrc={TalrooLogo}
+            imageAlt="Project 2"
+            description="Incoming Machine Learning Engineer Intern"
+          />
           {/* Project 1 */}
           <ExperienceCard
             name="Union Pacific Railroad"
@@ -137,14 +146,7 @@ const Home = () => {
             imageAlt="Project 1"
             description="Software Engineer Intern"
           />
-          {/* Project 2 */}
-          <ExperienceCard
-            name="Cornell University"
-            moreDetails="/experiences"
-            imageSrc={CULogo}
-            imageAlt="Project 2"
-            description="Teaching Assistant"
-          />
+
           {/* Project 3 */}
           <ExperienceCard
             name="Cornell Data Science"
@@ -155,14 +157,6 @@ const Home = () => {
           />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
-          {/* Project 1 */}
-          <ExperienceCard
-            name="Union Pacific Railroad"
-            moreDetails="/experiences"
-            imageSrc={UPLogo}
-            imageAlt="Project 1"
-            description="Software Engineer Intern"
-          />
           {/* Project 2 */}
           <ExperienceCard
             name="Cornell University"
@@ -171,24 +165,24 @@ const Home = () => {
             imageAlt="Project 2"
             description="Teaching Assistant"
           />
-          {/* Project 3 */}
+          {/* Project 1 */}
           <ExperienceCard
-            name="Cornell Data Science"
+            name="Wohohiame"
             moreDetails="/experiences"
-            imageSrc={CDSLogo}
-            imageAlt="Project 3"
-            description="Quantitative Finance Subteam Lead"
+            imageSrc={WohohiameLogo}
+            imageAlt="Project 1"
+            description="Software Engineer Intern"
           />
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
-            Show More
+            Learn More By Clicking On Each Card
           </button>
         </div>
       </div>
       <div className="h-screen" id="projects">
-        <h1 className="text-4xl py-8">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h1 className="text-4xl py-8 font-bold">Projects</h1>
+        <div className="gap-4 flex h-[40vh] justify-center mb-4">
           {/* Project 1 */}
           <ProjectCard
             name="TrivAI"
@@ -198,41 +192,67 @@ const Home = () => {
             description="iOS app that generates review question from user inputs and textbook
           images"
           />
-          {/* Project 2 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project2.jpg"
-              alt="Project 2"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4 ">
-              <Link to="/project">
-                <h2 className="text-xl font-bold mb-2">
-                  Cloud Based Options Trading Bot
-                </h2>
-              </Link>
-              <p className="">
-                Researched and implemented the long straddle strategy to
-                generate alpha
-              </p>
-            </div>
-          </div>
+          <ProjectCard
+            name="Cloud Based Options Trading Bot"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Researched and implemented the long straddle strategy to
+          generate alpha"
+          />
+
           {/* Project 3 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project3.jpg"
-              alt="Project 3"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <Link to="/project">
-                <h2 className="text-xl font-bold mb-2">Go Fish Card Game</h2>
-              </Link>
-              <p className="">
-                Implementation of the popular card game Go Fish in OCaml
-              </p>
-            </div>
-          </div>
+          <ProjectCard
+            name="Go Fish Card Game"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Implementation of the popular card game Go Fish in OCaml"
+          />
+          <ProjectCard
+            name="Cloud Based Options Trading Bot"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Researched and implemented the long straddle strategy to
+          generate alpha"
+          />
+        </div>
+        <div className="gap-4 flex h-[40vh] justify-center">
+          {/* Project 1 */}
+          <ProjectCard
+            name="TrivAI"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="iOS app that generates review question from user inputs and textbook
+          images"
+          />
+          <ProjectCard
+            name="Cloud Based Options Trading Bot"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Researched and implemented the long straddle strategy to
+          generate alpha"
+          />
+
+          {/* Project 3 */}
+          <ProjectCard
+            name="Go Fish Card Game"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Implementation of the popular card game Go Fish in OCaml"
+          />
+          <ProjectCard
+            name="Cloud Based Options Trading Bot"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Researched and implemented the long straddle strategy to
+          generate alpha"
+          />
         </div>
         <div className="flex justify-center mt-8">
           <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
