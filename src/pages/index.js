@@ -9,6 +9,11 @@ import UPLogo from "../images/uplogo.png";
 import CDSLogo from "../images/cds_logo.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
 import Typewriter from "typewriter-effect";
+import ProjectCard from "../components/projectCard";
+import TrivAI from "../images/trivai.png";
+import BackgroundMap from "../images/map.png";
+import ExperienceCard from "../components/experienceCard";
+
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
   useEffect(() => {
@@ -67,53 +72,132 @@ const Home = () => {
           </div>
         )}
       </div>
-      <div className="h-screen grid grid-cols-6 max-w-full flex flex-row py-14">
-        <div
-          className="col-start-1 col-end-6 bg-[#FFFBF5] text-[#679186] px-8"
-          id="about"
-        >
-          <h1 className="text-4xl pt-40 pb-10"> A Little About Myself:</h1>
-          <div className="space-y-4 text-lg">
-            <li>
-              Undergrad at Cornell University Studying Computer Science and
-              Applied Mathematics
-            </li>
-            <li>
-              Incoming Machine Learning Engineer Intern at Talroo (Summer 2024)
-            </li>
-            <li>Interests: Software Development, Machine Learning, Finance</li>
-            <li>
-              Ask me About: Ultimate Frisbee, Running, Chess, Collecting
-              Sneakers
-            </li>
+
+      <div className="h-screen mx-[-7rem] w-screen relative">
+        <img
+          className="h-full w-full object-cover overflow-hidden -z-50 opacity-10 absolute"
+          src={BackgroundMap}
+          alt=""
+        ></img>
+        <div className="py-14 h-1/3 mx-28">
+          <div
+            className=" bg-[#FFFBF5] text-[#679186] px-8 pb-10 mb-10"
+            id="about"
+          >
+            <h1 className="text-4xl pt-10 pb-10 font-bold">
+              {" "}
+              A Little About Myself:
+            </h1>
+            <div className="space-y-4 text-2xl">
+              I'm <strong>Iram</strong> (pronounced "I-Rum"), a current junior
+              at <strong>Cornell University </strong>pursuing a{" "}
+              <strong>Bachelor of Science</strong> in{" "}
+              <strong>computer science</strong>. I'm interested in{" "}
+              <strong>software development</strong>,{" "}
+              <strong>machine learning</strong>, and{" "}
+              <strong>financial markets</strong>. Some of my hobbies are playing{" "}
+              <u>ultimate frisbee</u>, deciphering <u>chess puzzles</u>, and
+              cooking <u>ramen</u>. I'm excited to share my experiences with
+              you!
+            </div>
+          </div>
+          <div className="flex justify-center items-center space-x-10">
+            <img
+              className="h-[40vh] transition-transform transform hover:scale-110"
+              src={pfp}
+              alt="pfp"
+            />
+            <img
+              className="h-[40vh] transition-transform transform hover:scale-110"
+              src={frisbee}
+              alt="frisbee"
+            />
+            <img
+              className="h-[40vh] transition-transform transform hover:scale-110"
+              src={pfp}
+              alt="pfp"
+            />
+            <img
+              className="h-[40vh] transition-transform transform hover:scale-110"
+              src={frisbee}
+              alt="frisbee"
+            />
           </div>
         </div>
-        <div className="col-start-6 col-start-8 flex justify-center flex-col items-center">
-          <img className="h-[50vh]" src={pfp} alt="pfp"></img>
-          {/* <img className="h-44 w-32" src={frisbee} alt="frisbee"></img> */}
+      </div>
+
+      <div className="h-screen mt-10" id="experiences">
+        <h1 className="text-4xl py-8 font-bold">Past Experiences</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
+          {/* Project 1 */}
+          <ExperienceCard
+            name="Union Pacific Railroad"
+            moreDetails="/experiences"
+            imageSrc={UPLogo}
+            imageAlt="Project 1"
+            description="Software Engineer Intern"
+          />
+          {/* Project 2 */}
+          <ExperienceCard
+            name="Cornell University"
+            moreDetails="/experiences"
+            imageSrc={CULogo}
+            imageAlt="Project 2"
+            description="Teaching Assistant"
+          />
+          {/* Project 3 */}
+          <ExperienceCard
+            name="Cornell Data Science"
+            moreDetails="/experiences"
+            imageSrc={CDSLogo}
+            imageAlt="Project 3"
+            description="Quantitative Finance Subteam Lead"
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
+          {/* Project 1 */}
+          <ExperienceCard
+            name="Union Pacific Railroad"
+            moreDetails="/experiences"
+            imageSrc={UPLogo}
+            imageAlt="Project 1"
+            description="Software Engineer Intern"
+          />
+          {/* Project 2 */}
+          <ExperienceCard
+            name="Cornell University"
+            moreDetails="/experiences"
+            imageSrc={CULogo}
+            imageAlt="Project 2"
+            description="Teaching Assistant"
+          />
+          {/* Project 3 */}
+          <ExperienceCard
+            name="Cornell Data Science"
+            moreDetails="/experiences"
+            imageSrc={CDSLogo}
+            imageAlt="Project 3"
+            description="Quantitative Finance Subteam Lead"
+          />
+        </div>
+        <div className="flex justify-center mt-8">
+          <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
+            Show More
+          </button>
         </div>
       </div>
       <div className="h-screen" id="projects">
         <h1 className="text-4xl py-8">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
-            <img
-              src="project1.jpg"
-              alt="Project 1"
-              className="w-full h-40 object-cover"
-            />
-            <div className="p-4">
-              <Link to="/project">
-                <h2 className="text-xl font-bold mb-2">TrivAI</h2>
-              </Link>
-              <p className="">
-                iOS app that generates review question from user inputs and
-                textbook images
-              </p>
-            </div>
-          </div>
-
+          <ProjectCard
+            name="TrivAI"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="iOS app that generates review question from user inputs and textbook
+          images"
+          />
           {/* Project 2 */}
           <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
             <img
@@ -133,7 +217,6 @@ const Home = () => {
               </p>
             </div>
           </div>
-
           {/* Project 3 */}
           <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md">
             <img
@@ -158,50 +241,6 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-[70vh]" id="experiences">
-        <h1 className="text-4xl py-8">Experiences</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Project 1 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
-            <img src={UPLogo} alt="Project 1" className="h-40 object-cover" />
-            <div className="p-4">
-              <Link to="/experiences">
-                <h2 className="text-xl font-bold mb-2">
-                  Union Pacific Railroad
-                </h2>
-              </Link>
-              <p className="">Software Engineer Intern</p>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
-            <img src={CULogo} alt="Project 2" className=" h-40 object-cover" />
-            <div className="p-4 ">
-              <Link to="/experiences">
-                <h2 className="text-xl font-bold mb-2">Cornell University</h2>
-              </Link>
-              <p className="">Teaching Assistant </p>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="bg-[#FFFBF5] text-[#679186] rounded-lg overflow-hidden shadow-md flex">
-            <img src={CDSLogo} alt="Project 3" className="h-40 object-cover" />
-            <div className="p-4">
-              <Link to="/experiences">
-                <h2 className="text-xl font-bold mb-2">Cornell Data Science</h2>
-              </Link>
-              <p className="">Quantitative Finance Subteam Lead</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center mt-8">
-          <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
-            Show More
-          </button>
-        </div>
-      </div>
       <div className="h-[30vh]" id="contact">
         <div className="max-w-full mt-16">
           <h1 className="text-4xl mb-8">Get In Touch!</h1>
