@@ -15,6 +15,8 @@ import BackgroundMap from "../images/map.png";
 import ExperienceCard from "../components/experienceCard";
 import WohohiameLogo from "../images/wohohiameLogo.png";
 import TalrooLogo from "../images/talroo.png";
+import Python from "../images/python.png";
+import Collab from "../images/collab.jpg";
 const Home = () => {
   const [showSecondTyped, setShowSecondTyped] = useState(false);
   useEffect(() => {
@@ -24,7 +26,6 @@ const Home = () => {
 
     return () => clearTimeout(delayTimer);
   }, []);
-
   return (
     <div className="max-w-full mx-28">
       <div className="grid grid-cols-6  h-screen ">
@@ -97,9 +98,8 @@ const Home = () => {
               <strong>software development</strong>,{" "}
               <strong>machine learning</strong>, and{" "}
               <strong>financial markets</strong>. Some of my hobbies are playing{" "}
-              <u>ultimate frisbee</u>, deciphering <u>chess puzzles</u>, and
-              cooking <u>ramen</u>. I'm excited to share my experiences with
-              you!
+              <u>ultimate frisbee</u>, solving <u>chess puzzles</u>, and cooking{" "}
+              <u>ramen</u>. I'm excited to share my experiences with you!
             </div>
           </div>
           <div className="flex justify-center items-center space-x-10">
@@ -191,6 +191,7 @@ const Home = () => {
             imageAlt="TrivAI Logo"
             description="iOS app that generates review question from user inputs and textbook
           images"
+            skills={[Python, Collab]}
           />
           <ProjectCard
             name="Cloud Based Options Trading Bot"
@@ -199,42 +200,35 @@ const Home = () => {
             imageAlt="TrivAI Logo"
             description="Researched and implemented the long straddle strategy to
           generate alpha"
+            skills={[Python, Collab]}
+          />
+          <ProjectCard
+            name="Options Pricing Models"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Analyzed Black-Scholes, Monte Carlo, and Binomial Tree pricing models for options"
+            skills={[Python, Collab]}
           />
 
-          {/* Project 3 */}
           <ProjectCard
-            name="Go Fish Card Game"
+            name="Figgie Bot"
             moreDetails="/project"
             imageSrc={TrivAI}
             imageAlt="TrivAI Logo"
-            description="Implementation of the popular card game Go Fish in OCaml"
-          />
-          <ProjectCard
-            name="Cloud Based Options Trading Bot"
-            moreDetails="/project"
-            imageSrc={TrivAI}
-            imageAlt="TrivAI Logo"
-            description="Researched and implemented the long straddle strategy to
-          generate alpha"
+            description="Developed game engine for card game Figgie"
+            skills={[Python, Collab]}
           />
         </div>
         <div className="gap-4 flex h-[40vh] justify-center">
           {/* Project 1 */}
           <ProjectCard
-            name="TrivAI"
+            name="Sports Market Exchange"
             moreDetails="/project"
             imageSrc={TrivAI}
             imageAlt="TrivAI Logo"
-            description="iOS app that generates review question from user inputs and textbook
-          images"
-          />
-          <ProjectCard
-            name="Cloud Based Options Trading Bot"
-            moreDetails="/project"
-            imageSrc={TrivAI}
-            imageAlt="TrivAI Logo"
-            description="Researched and implemented the long straddle strategy to
-          generate alpha"
+            description="Reduce the vig charged by sportsbooks by creating a market for sports betting"
+            skills={[Python, Collab]}
           />
 
           {/* Project 3 */}
@@ -244,6 +238,16 @@ const Home = () => {
             imageSrc={TrivAI}
             imageAlt="TrivAI Logo"
             description="Implementation of the popular card game Go Fish in OCaml"
+            skills={[Python, Collab]}
+          />
+          {/* Project 3 */}
+          <ProjectCard
+            name="Go Fish Card Game"
+            moreDetails="/project"
+            imageSrc={TrivAI}
+            imageAlt="TrivAI Logo"
+            description="Implementation of the popular card game Go Fish in OCaml"
+            skills={[Python, Python]}
           />
           <ProjectCard
             name="Cloud Based Options Trading Bot"
@@ -252,6 +256,7 @@ const Home = () => {
             imageAlt="TrivAI Logo"
             description="Researched and implemented the long straddle strategy to
           generate alpha"
+            skills={[Python, Python]}
           />
         </div>
         <div className="flex justify-center mt-8">
@@ -261,9 +266,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="h-[30vh]" id="contact">
+      <div className="h-[50vh] pt-[10vh]" id="contact">
         <div className="max-w-full mt-16">
-          <h1 className="text-4xl mb-8">Get In Touch!</h1>
+          <h1 className="text-4xl mb-8 font-bold">Get In Touch!</h1>
           <div className="flex flex-col items-center">
             {/* LinkedIn */}
             <a
