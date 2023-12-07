@@ -20,8 +20,7 @@ const NavBar = () => {
       </div>
       <ul className="text-2xl flex flex-col gap-y-2 text-left justify-center">
         {NavItem("About", "about")}
-        {NavItem("Projects", "projects")}
-        {NavItem("Experiences", "experiences")}
+        {NavItem("My Work", "portfolio")}
         {NavItem("Contact", "contact")}
         {NavItem("Resume", "resume")}
       </ul>
