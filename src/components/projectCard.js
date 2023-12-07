@@ -11,15 +11,17 @@ const ProjectCard = ({
 }) => {
   return (
     <Link to={moreDetails}>
-      <div className="flex h-[40vh] items-center justify-center">
-        <div className="group h-72 w-72 [perspective:1000px]">
+      <div className="flex h-[40vh] items-center ">
+        <div className="group [perspective:1000px]">
           <div className="relative h-full w-full rounded-m shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
-                src={imageSrc}
-                alt={imageAlt}
-              />
+            <div className="flex flex-col bg-red-100 justify-center">
+              <div className="absolute inset-0">
+                <img
+                  className="h-full w-full rounded-xl object-cover shadow-xl shadow-black/40"
+                  src={imageSrc}
+                  alt={imageAlt}
+                />
+              </div>
             </div>
             <div className="absolute inset-0 h-full w-full rounded-xl bg-[#FFFBF5]/95 px-6 text-center text-[#679186] [transform:rotateY(180deg)] [backface-visibility:hidden]">
               <div className="flex min-h-full flex-col items-center justify-center">

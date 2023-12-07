@@ -8,7 +8,6 @@ import UPLogo from "../images/uplogo.png";
 import CDSLogo from "../images/cds_logo.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
 import Typewriter from "typewriter-effect";
-import ProjectCard from "../components/projectCard";
 import TrivAI from "../images/trivai.png";
 import BackgroundMap from "../images/map.png";
 import ExperienceCard from "../components/experienceCard";
@@ -19,6 +18,18 @@ import Collab from "../images/collab.jpg";
 import headerPfp from "../images/Header.png";
 import NextButton from "../components/nextButton";
 import teamPhoto from "../images/team.jpg";
+import JavaLogo from "../images/java.png";
+import SpringBootLogo from "../images/springboot.png";
+import JenkinsLogo from "../images/jenkins.png";
+import NifiLogo from "../images/nifi.jpeg";
+import MLLogo from "../images/ml.png";
+import DatabricksLogo from "../images/databricks.jpeg";
+import SportsBetting from "../images/betting.svg";
+import OCamlLogo from "../images/ocaml.png";
+import Finance from "../images/finance.jpeg";
+import Options from "../images/options.png";
+import ReactLogo from "../images/react.png";
+import TypeScriptLogo from "../images/typescript.svg";
 const Home = () => {
   const [showTypeWriter, setShowTypeWriter] = useState(true);
 
@@ -74,9 +85,9 @@ const Home = () => {
               className=" bg-[#FFFBF5] text-[#242e42] px-8 pb-10 mb-10"
               id="about"
             >
-              <h1 className="text-4xl pt-10 pb-10 font-bold">
+              <h1 className="text-4xl pt-10 pb-10 font-bold underline underline-offset-8">
                 {" "}
-                A Little About Myself:
+                A Little About Myself
               </h1>
               <div className="space-y-4 text-xl">
                 I'm <strong>Iram</strong> (pronounced "I-Rum"), a junior at{" "}
@@ -123,63 +134,124 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="h-[200vh] mt-10" id="portfolio">
+        <div className="h-[170vh] mt-10" id="portfolio">
           <h1 className="text-4xl py-16 font-bold">My Work</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
-            {/* Project 2 */}
+          <div className="grid grid-cols-3  md:grid-cols-3 sm:grid-cols-2 gap-x-6 gap-y-8 py-5">
             <ExperienceCard
               name="Talroo"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/talroo"
+              date="Summer 2024"
               imageSrc={TalrooLogo}
               imageAlt="Project 2"
               description="Incoming Machine Learning Engineer Intern"
-              skills={[Python, Collab]}
-            />
-            {/* Project 1 */}
-            <ExperienceCard
-              name="Union Pacific Railroad"
-              moreDetails="/experiences"
-              imageSrc={UPLogo}
-              imageAlt="Project 1"
-              description="Software Engineer Intern"
-              skills={[Python, Collab]}
+              skills={[Python, MLLogo, DatabricksLogo]}
             />
 
-            {/* Project 3 */}
             <ExperienceCard
               name="Cornell Data Science"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/cds"
+              date="Present"
               imageSrc={CDSLogo}
               imageAlt="Project 3"
               description="Quantitative Finance Subteam Lead"
-              skills={[Python, Collab]}
+              skills={[Python, Collab, Finance]}
             />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
+
             {/* Project 2 */}
             <ExperienceCard
               name="Cornell University"
               moreDetails="/experiences"
+              date="Present"
               imageSrc={CULogo}
               imageAlt="Project 2"
               description="Teaching Assistant"
-              skills={[Python, Collab]}
+              skills={[Python, OCamlLogo, Collab]}
+            />
+            <ExperienceCard
+              name="Premier Markets"
+              moreDetails="/portfolio/premier_markets"
+              date="Fall 2023"
+              imageSrc={SportsBetting}
+              imageAlt="Project 1"
+              description="Collaborative Project with CDS Project Team "
+              skills={[JavaLogo, SpringBootLogo, JenkinsLogo, NifiLogo]}
             />
             {/* Project 1 */}
             <ExperienceCard
+              name="Union Pacific Railroad"
+              moreDetails="/portfolio/union_pacific"
+              date="Summer 2023"
+              imageSrc={UPLogo}
+              imageAlt="Project 1"
+              description="Software Engineer Intern"
+              skills={[JavaLogo, SpringBootLogo, JenkinsLogo, NifiLogo]}
+            />
+            <ExperienceCard
+              name="TrivAI"
+              moreDetails="/experiences"
+              date="Spring 2023"
+              imageSrc={TrivAI}
+              imageAlt="Project 1"
+              description="Collaborative Project with CDS Project Team"
+              skills={[ReactLogo, Python, Collab]}
+            />
+            {/* Project 2 */}
+            <ExperienceCard
+              name="Options Pricing Model"
+              moreDetails="/experiences"
+              date="Spring 2023"
+              imageSrc={Options}
+              imageAlt="Project 2"
+              description="Collaborative Project with CDS Project Team"
+              skills={[Python, Finance, Collab]}
+            />
+            {/* Project 1 */}
+            <ExperienceCard
+              name="GoFish Card Game"
+              moreDetails="/experiences"
+              imageSrc={WohohiameLogo}
+              date="Spring 2023"
+              imageAlt="Project 1"
+              description="Final Group Project for CS 3110 (Functional Programming)"
+              skills={[OCamlLogo, Collab]}
+            />
+            <ExperienceCard
+              name="Wohohiame"
+              moreDetails="/experiences"
+              imageSrc={WohohiameLogo}
+              date="Winter 2022"
+              imageAlt="Project 1"
+              description="Software Engineer Intern"
+              skills={[ReactLogo, TypeScriptLogo]}
+            />
+
+            {/* <ExperienceCard
               name="Wohohiame"
               moreDetails="/experiences"
               imageSrc={WohohiameLogo}
               imageAlt="Project 1"
               description="Software Engineer Intern"
               skills={[Python, Collab]}
+            /> */}
+            <ExperienceCard
+              name="Options Trading Bot"
+              moreDetails="/experiences"
+              imageSrc={WohohiameLogo}
+              date="Fall 2022"
+              imageAlt="Project 1"
+              description="Collaborative Project with CDS Project Team"
+              skills={[Python, Collab]}
+            />
+            <ExperienceCard
+              name="Figgie Bot"
+              moreDetails="/experiences"
+              imageSrc={CULogo}
+              date="Fall 2022"
+              imageAlt="Project 2"
+              description="Collaborative Project with CDS Project Team"
+              skills={[Python, Collab]}
             />
           </div>
-          {/* <div className="flex justify-center mt-8">
-            <button className="bg-[#679186] text-white px-6 py-3 rounded-md hover:bg-[#527670] focus:outline-none focus:ring focus:border-blue-300">
-              Learn More By Clicking On Each Card
-            </button>
-          </div> */}
         </div>
       </div>
       <div
