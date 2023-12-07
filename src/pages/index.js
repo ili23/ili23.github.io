@@ -27,7 +27,7 @@ import DatabricksLogo from "../images/databricks.jpeg";
 import SportsBetting from "../images/betting.svg";
 import OCamlLogo from "../images/ocaml.png";
 import Finance from "../images/finance.jpeg";
-import Options from "../images/options.png";
+import Options from "../images/Options.png";
 import ReactLogo from "../images/react.png";
 import TypeScriptLogo from "../images/typescript.svg";
 const Home = () => {
