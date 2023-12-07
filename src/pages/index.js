@@ -52,7 +52,7 @@ const Home = () => {
       <div className="grid grid-cols-7 h-screen ">
         <div className="flex flex-row justify-center items-center col-span-6 px-20 ">
           <div className="flex flex-col justify-center w-full relative">
-            <h1 className="text-7xl py-20">Hi, I'm Iram!</h1>
+            <h1 className="text-7xl py-20 font-bold">Hi, I'm Iram!</h1>
             <h2 className="text-4xl  pb-16">
               {showTypeWriter ? (
                 <Typewriter
@@ -73,7 +73,7 @@ const Home = () => {
               alt="headerPfp"
               className="h-[50vh] w-[50vh] rounded-full shadow-lg shadow-slate-500/50"
             />
-            <NextButton to="portfolio" text="Scroll to Learn More!" />
+            <NextButton to="about" text="Scroll to Learn More!" />
           </div>
         </div>
         <div className="flex col-span-1 bg-[#FFFBF5]">
