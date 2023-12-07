@@ -154,7 +154,7 @@ const Home = () => {
 
             <ExperienceCard
               name="Cornell Data Science"
-              moreDetails="/portfolio/cds"
+              moreDetails="/portfolio/cornell-data-science"
               date="Present"
               imageSrc={CDSLogo}
               imageAlt="Project 3"
@@ -166,7 +166,7 @@ const Home = () => {
             {/* Project 2 */}
             <ExperienceCard
               name="Cornell University"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/teaching-assistant"
               date="Present"
               imageSrc={CULogo}
               imageAlt="Project 2"
@@ -176,7 +176,7 @@ const Home = () => {
             />
             <ExperienceCard
               name="Premier Markets"
-              moreDetails="/portfolio/premier_markets"
+              moreDetails="/portfolio/premier-markets"
               date="Fall 2023"
               imageSrc={SportsBetting}
               imageAlt="Project 1"
@@ -187,7 +187,7 @@ const Home = () => {
             {/* Project 1 */}
             <ExperienceCard
               name="Union Pacific Railroad"
-              moreDetails="/portfolio/union_pacific"
+              moreDetails="/portfolio/union-pacific"
               date="Summer 2023"
               imageSrc={UPLogo}
               imageAlt="Project 1"
@@ -197,7 +197,7 @@ const Home = () => {
             />
             <ExperienceCard
               name="TrivAI"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/trivai"
               date="Spring 2023"
               imageSrc={TrivAI}
               imageAlt="Project 1"
@@ -208,7 +208,7 @@ const Home = () => {
             {/* Project 2 */}
             <ExperienceCard
               name="Options Pricing Model"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/options-pricing"
               date="Spring 2023"
               imageSrc={Options}
               imageAlt="Project 2"
@@ -219,7 +219,7 @@ const Home = () => {
             {/* Project 1 */}
             <ExperienceCard
               name="GoFish Card Game"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/gofish"
               imageSrc={Poker}
               date="Spring 2023"
               imageAlt="Project 1"
@@ -229,7 +229,7 @@ const Home = () => {
             />
             <ExperienceCard
               name="Wohohiame"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/wohohiame"
               imageSrc={WohohiameLogo}
               date="Winter 2022"
               imageAlt="Project 1"
@@ -248,7 +248,7 @@ const Home = () => {
             /> */}
             <ExperienceCard
               name="Options Trading Bot"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/options-trading-bot"
               imageSrc={LongStraddle}
               date="Fall 2022"
               imageAlt="Project 1"
@@ -258,7 +258,7 @@ const Home = () => {
             />
             <ExperienceCard
               name="Figgie Bot"
-              moreDetails="/experiences"
+              moreDetails="/portfolio/figgie-bot"
               imageSrc={Figgie}
               date="Fall 2022"
               imageAlt="Project 2"

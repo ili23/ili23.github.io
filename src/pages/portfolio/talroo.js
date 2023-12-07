@@ -1,5 +1,5 @@
 import React from "react";
-import Template from "../template.js";
+import Template from "../../components/template.js";
 import TalrooImg from "../../images/talroo.png";
 const Talroo = () => {
   return (
