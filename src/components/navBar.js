@@ -1,7 +1,10 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import { Link } from "gatsby";
 import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
 import Logo from "../images/logo.png";
+import Resume from "../assets/Iram_Liu_Resume.pdf";
+
 const NavItem = (section, to) => {
   return (
     <li className=" text-[#242e42] hover:border-b-2 border-b-2 border-transparent hover:border-[#242e42] cursor-pointer">
@@ -12,6 +15,9 @@ const NavItem = (section, to) => {
   );
 };
 
+const openPdfInNewTab = () => {
+  window.open(Resume, "_blank");
+};
 const NavBar = () => {
   return (
     <div className="mx-10 flex flex-col justify-center w-full relative">
@@ -22,7 +28,9 @@ const NavBar = () => {
         {NavItem("About", "about")}
         {NavItem("My Work", "portfolio")}
         {NavItem("Contact", "contact")}
-        {NavItem("Resume", "resume")}
+        <li className=" text-[#242e42] hover:border-b-2 border-b-2 border-transparent hover:border-[#242e42] cursor-pointer">
+          <button onClick={openPdfInNewTab}>Resume</button>
+        </li>
       </ul>
       <div className="flex justify-center absolute bottom-10 w-full gap-x-2">
         <a
