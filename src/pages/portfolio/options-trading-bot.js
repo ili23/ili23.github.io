@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "../../components/template.js";
-import OTBPresentation from "../../assets/OTB_presentation.pdf";
+import OTBPresentation from "../../assets/OTB_Presentation.pdf";
 const OTB = () => {
   return (
     <Template
