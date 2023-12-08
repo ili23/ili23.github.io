@@ -98,7 +98,7 @@ const Home = () => {
               </h1>
               <div className="space-y-4 text-xl">
                 I'm <strong>Iram</strong> (pronounced "I-Rum"), a junior at{" "}
-                <strong>Cornell University</strong> pursuing a{" "}
+                <strong>Cornell University </strong> pursuing a{" "}
                 <strong>Bachelor of Science</strong> in{" "}
                 <strong>computer science</strong> from Brooklyn, New York.
                 Aspiring to become a software engineer, I am drawn to the world
@@ -138,7 +138,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="h-[170vh] mt-10" id="portfolio">
+        <div className="lg:h-[150vh] 2xl:h-[120vh] mt-10" id="portfolio">
           <h1 className="text-4xl py-16 font-bold">My Work</h1>
           <div className="grid grid-cols-3  md:grid-cols-3 sm:grid-cols-2 gap-x-6 gap-y-8 py-5">
             <ExperienceCard
