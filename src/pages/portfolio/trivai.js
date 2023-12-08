@@ -1,23 +1,23 @@
 import React from "react";
 import Template from "../../components/template.js";
-import TalrooImg from "../../images/talroo.png";
-const Talroo = () => {
+const TrivAI = () => {
   return (
     <Template
-      title="Talroo"
-      subtitle="Machine Learning Engineering Intern"
-      skills="TBD"
-      p1="I'm excited to join Talroo Inc. this summer!"
-      p2="From my conversations with the team throughout the recruiting process, 
-      I will be interacting with standard ML and data tools and packages such as 
-      Docker, AWS, Databricks, Snowflake, and many more."
-      p3="By the end of my internship, I hope to learn more about the ML pipeline 
-      and building scalable systems to deploy large machine learning models."
-      imageSrc={TalrooImg}
+      title="TrivAI"
+      subtitle="Developer with Cornell Data Science"
+      skills="Python, Computer Vision, React, AWS, Git, Agile"
+      p1="TrivAI is an iOS app that automatically generates trivia/review questions from user-inputted topics and images. The demo 
+      video below shows the app in action!"
+      p2="I mainly worked on the frontend which was in React Native as well as the text extraction and computer vision portion. I also gained
+      exposure to AWS lambda functions and the Agile development process."
+      p3="Try out TrivAI yourself! Download the app using the link below!"
+      imageSrc=""
       pres="bro"
       vid="6h2JkV1PLXo"
-      num="0"
+      num="1"
+      link="https://apps.apple.com/us/app/trivai/id6447194187"
+      containsLink={true}
     />
   );
 };
-export default Talroo;
+export default TrivAI;

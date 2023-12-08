@@ -35,7 +35,11 @@ const Template = ({
           <p className="pb-2">{p2}</p>
           <p className="pb-2">{p3}</p>
           {containsLink && (
-            <a className="text-xl font-bold" target="_blank" href={link}>
+            <a
+              className="text-xl font-bold underline"
+              target="_blank"
+              href={link}
+            >
               {`Link to ` + title}
             </a>
           )}

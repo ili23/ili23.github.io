@@ -1,23 +1,23 @@
 import React from "react";
 import Template from "../../components/template.js";
-import TalrooImg from "../../images/talroo.png";
-const Talroo = () => {
+import Cornell from "../../images/cuseal.png";
+const TA = () => {
   return (
     <Template
-      title="Talroo"
-      subtitle="Machine Learning Engineering Intern"
-      skills="TBD"
-      p1="I'm excited to join Talroo Inc. this summer!"
-      p2="From my conversations with the team throughout the recruiting process, 
-      I will be interacting with standard ML and data tools and packages such as 
-      Docker, AWS, Databricks, Snowflake, and many more."
-      p3="By the end of my internship, I hope to learn more about the ML pipeline 
-      and building scalable systems to deploy large machine learning models."
-      imageSrc={TalrooImg}
-      pres="bro"
-      vid="6h2JkV1PLXo"
+      title="Cornell University - College of Engineering"
+      subtitle="Teaching Assistant"
+      skills="Java, Object Oriented Programming, Data Structures, OCaml, Functional Programming, Communication"
+      p1="I started TAing for MATH 1920 - Multivariable Calculus for Engineers in the Fall of 2022. Since then, I
+      have been a TA for CS 2110 - Object Oriented Programming and Data Structures and CS 3110 - Functional Programming and Data Structures."
+      p2="As a TA, I hold office hours, grade assignments, and hold review sessions for students. 
+      I also hold weekly recitation sections where I help students recall and apply concepts from lecture."
+      p3="Some of the main skills that I have developed apart from gaining a deeper understanding of the course material is breaking down complex
+      technical concepts to students with different backgrounds and learning styles."
+      imageSrc={Cornell}
+      pres=""
+      vid=""
       num="0"
     />
   );
 };
-export default Talroo;
+export default TA;

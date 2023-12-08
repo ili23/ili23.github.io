@@ -1,23 +1,24 @@
 import React from "react";
 import Template from "../../components/template.js";
-import TalrooImg from "../../images/talroo.png";
-const Talroo = () => {
+import FiggiePrezi from "../../assets/figgiePresentation.pdf";
+const Figgie = () => {
   return (
     <Template
-      title="Talroo"
-      subtitle="Machine Learning Engineering Intern"
-      skills="TBD"
-      p1="I'm excited to join Talroo Inc. this summer!"
-      p2="From my conversations with the team throughout the recruiting process, 
-      I will be interacting with standard ML and data tools and packages such as 
-      Docker, AWS, Databricks, Snowflake, and many more."
-      p3="By the end of my internship, I hope to learn more about the ML pipeline 
-      and building scalable systems to deploy large machine learning models."
-      imageSrc={TalrooImg}
-      pres="bro"
-      vid="6h2JkV1PLXo"
-      num="0"
+      title="Figgie Bot"
+      subtitle="Backend and Game Engine Developer"
+      skills="Python, MongoDB, Websockets, Fast API"
+      p1="Figgie Bot was my first project on CDS and also my first time working with a large team of developers."
+      p2="Despite my limited experience, I was able to contribute to the project by developing the backend and game engine. 
+      Through this project, I learned how to use websockets and Fast APi to create the backend of a game to handle multiplayer games. 
+      In addition, I set up a MongoDB database to store user data and game data."
+      p3=""
+      imageSrc=""
+      pres={FiggiePrezi}
+      vid=""
+      num="2"
+      link="https://github.com/CornellDataScience/FiggieBot"
+      containsLink={true}
     />
   );
 };
-export default Talroo;
+export default Figgie;

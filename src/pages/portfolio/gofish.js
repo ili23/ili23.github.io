@@ -1,23 +1,23 @@
 import React from "react";
 import Template from "../../components/template.js";
-import TalrooImg from "../../images/talroo.png";
-const Talroo = () => {
+import Terminal from "../../images/gofishterminal.png";
+const GoFish = () => {
   return (
     <Template
-      title="Talroo"
-      subtitle="Machine Learning Engineering Intern"
-      skills="TBD"
-      p1="I'm excited to join Talroo Inc. this summer!"
-      p2="From my conversations with the team throughout the recruiting process, 
-      I will be interacting with standard ML and data tools and packages such as 
-      Docker, AWS, Databricks, Snowflake, and many more."
-      p3="By the end of my internship, I hope to learn more about the ML pipeline 
-      and building scalable systems to deploy large machine learning models."
-      imageSrc={TalrooImg}
-      pres="bro"
-      vid="6h2JkV1PLXo"
+      title="Go Fish"
+      subtitle="CS 3110 Final Group Project"
+      skills="Ocaml, Collaboration, Git"
+      p1="This was a 3 person collaborative final project where we had to implement the card game Go Fish in OCaml. The main
+      skills that I learned from was planning out a large project with a team and using the Agile methodology."
+      p2=""
+      p3=""
+      imageSrc={Terminal}
+      pres=""
+      vid=""
       num="0"
+      link="https://github.com/ili23/cs3110-final"
+      containsLink={true}
     />
   );
 };
-export default Talroo;
+export default GoFish;

@@ -14,7 +14,7 @@ const Wohohiame = () => {
       p3="While I didn't have much web-development experience at the start of the internship, I gained experience in
       TypeScript, React and Node.js through the development of their website."
       imageSrc={WohohiamePic}
-      pres="bro"
+      pres=""
       vid=""
       num="0"
       link="https://www.wohohiame.com/"
